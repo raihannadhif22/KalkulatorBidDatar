@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonLT"
+        android:layout_width="127dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:text="Lebar/Tinggi:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPAD" />
+
+    <Button
+        android:id="@+id/buttonPAD"
+        android:layout_width="197dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Panjang/Alas/Diameter:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPAD"
+        android:layout_width="163dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/buttonPAD"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLT"
+        android:layout_width="163dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toEndOf="@+id/buttonLT"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPAD" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="58dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="40dp"
+        android:text="Luas:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPersegi" />
+
+    <TextView
+        android:id="@+id/textViewhasil2"
+        android:layout_width="58dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/textViewkeliling"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhasil1" />
+
+    <TextView
+        android:id="@+id/textViewkeliling"
+        android:layout_width="62dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:text="Keliling:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView" />
+
+    <TextView
+        android:id="@+id/textViewhasil1"
+        android:layout_width="58dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="40dp"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toEndOf="@+id/TextView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPersegi" />
+
+    <Button
+        android:id="@+id/buttonPersegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Persegi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLT" />
+
+    <Button
+        android:id="@+id/buttonsegitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Segitiga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toEndOf="@+id/buttonPersegi"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLT" />
+
+    <Button
+        android:id="@+id/buttonlingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Lingkaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toEndOf="@+id/buttonsegitiga"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

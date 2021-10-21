@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="buttonsegitiga" type="id" />
+    <item name="buttonlingkaran" type="id" />
+    <item name="buttonPersegi" type="id" />
+    <item name="textViewhasil2" type="id" />
+    <item name="editTextLT" type="id" />
+    <item name="editTextPAD" type="id" />
+    <item name="textViewhasil1" type="id" />
+    <item name="buttonLT" type="id" />
+    <item name="buttonPAD" type="id" />
+    <item name="TextView" type="id" />
+    <item name="textViewkeliling" type="id" />
+</resources>
